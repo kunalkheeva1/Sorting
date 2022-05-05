@@ -1,10 +1,17 @@
 public class Sorting {
     public static void main(String[] args) {
         int[] numbers={2,5,3,18,4,6};
+
         for(int i=0; i<numbers.length-1; i++){
-            for(int j=0; j<numbers.length-i-1; i++){
-                if(numbers[i]>numbers[i+1]){             //swap
+            for(int j=0; j<numbers.length-1-i; j++){
+                if(numbers[j]>numbers[j+1]){//swap
+            int temp= numbers[j];
+            numbers[j]=numbers[j+1];
+            numbers[j+1]=temp;
             }
         }
-    }
+    }for(int i=0; i<numbers.length; i++){
+            System.out.println(numbers[i]);
+        }
+}
 }
